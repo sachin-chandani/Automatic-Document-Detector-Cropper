@@ -36,12 +36,6 @@
 
   <!-- Content -->
   <div class="container">
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        As of v4.0.0, the core code of Cropper is replaced with <a class="alert-link" href="https://github.com/fengyuanchen/cropperjs">Cropper.js</a>. I recommend you to use the <a class="alert-link" href="https://github.com/fengyuanchen/jquery-cropper">jquery-cropper</a> instead of Cropper.
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
     <div class="row">
       <div class="col-md-9">
         <!-- <h3>Demo:</h3> -->
@@ -105,18 +99,6 @@
               <span class="input-group-text">deg</span>
             </span>
           </div>
-          <div class="input-group input-group-sm">
-            <span class="input-group-prepend">
-              <label class="input-group-text" for="dataScaleX">ScaleX</label>
-            </span>
-            <input type="text" class="form-control" id="dataScaleX" placeholder="scaleX">
-          </div>
-          <div class="input-group input-group-sm">
-            <span class="input-group-prepend">
-              <label class="input-group-text" for="dataScaleY">ScaleY</label>
-            </span>
-            <input type="text" class="form-control" id="dataScaleY" placeholder="scaleY">
-          </div>
         </div>
       </div>
     </div>
@@ -127,12 +109,12 @@
         <div class="btn-group">
           <button type="button" class="btn btn-primary" data-method="zoom" data-option="0.1" title="Zoom In">
             <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;zoom&quot;, 0.1)">
-              <span class="fa fa-search-plus"></span>
+              <span >Zoom In</span>
             </span>
           </button>
           <button type="button" class="btn btn-primary" data-method="zoom" data-option="-0.1" title="Zoom Out">
             <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;zoom&quot;, -0.1)">
-              <span class="fa fa-search-minus"></span>
+              <span >Zoom Out</span>
             </span>
           </button>
         </div>
@@ -140,22 +122,22 @@
         <div class="btn-group">
           <button type="button" class="btn btn-primary" data-method="move" data-option="-10" data-second-option="0" title="Move Left">
             <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;move&quot;, -10, 0)">
-              <span class="fa fa-arrow-left"></span>
+              <span class=>Left</span>
             </span>
           </button>
           <button type="button" class="btn btn-primary" data-method="move" data-option="10" data-second-option="0" title="Move Right">
             <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;move&quot;, 10, 0)">
-              <span class="fa fa-arrow-right"></span>
+              <span >Right</span>
             </span>
           </button>
           <button type="button" class="btn btn-primary" data-method="move" data-option="0" data-second-option="-10" title="Move Up">
             <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;move&quot;, 0, -10)">
-              <span class="fa fa-arrow-up"></span>
+              <span class=>Move Up</span>
             </span>
           </button>
           <button type="button" class="btn btn-primary" data-method="move" data-option="0" data-second-option="10" title="Move Down">
             <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;move&quot;, 0, 10)">
-              <span class="fa fa-arrow-down"></span>
+              <span class=>Move down</span>
             </span>
           </button>
         </div>
@@ -163,12 +145,12 @@
         <div class="btn-group">
           <button type="button" class="btn btn-primary" data-method="rotate" data-option="-1" title="Rotate Left">
             <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;rotate&quot;, -1)">
-              <span class="fa fa-rotate-left"></span>
+              <span >Rotate 1 degree left</span>
             </span>
           </button>
           <button type="button" class="btn btn-primary" data-method="rotate" data-option="1" title="Rotate Right">
             <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;rotate&quot;, 1)">
-              <span class="fa fa-rotate-right"></span>
+              <span >Rotate 1 degree right</span>
             </span>
           </button>
         </div>
@@ -178,7 +160,7 @@
           <label class="btn btn-primary btn-upload" for="inputImage" title="Upload image file">
             <input type="file" class="sr-only" id="inputImage" name="file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
             <span class="docs-tooltip" data-toggle="tooltip" title="Import image with Blob URLs">
-              <span class="fa fa-upload"></span>
+              <span >Upload</span>
             </span>
           </label>
         </div>
